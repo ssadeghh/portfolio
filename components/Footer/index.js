@@ -1,8 +1,6 @@
 import React from 'react'
 import Socials from '../Socials'
-import Link from 'next/link'
 import Button from '../Button'
-import GoogleMap from 'google-map-react'
 
 const Footer = ({}) => {
     const [name, setName] = React.useState('')
@@ -35,7 +33,7 @@ const Footer = ({}) => {
         <>
             <div className="mt-5 laptop:mt-40 p-2 laptop:p-0"></div>
             <div id="contact" className="relative">
-                <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap">
+                <div className="container px-5 py-10 mx-auto flex md:flex-nowrap">
                     <div className="w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 mt-5 p-10 flex items-end justify-start relative">
                         <iframe
                             width="100%"
@@ -48,7 +46,7 @@ const Footer = ({}) => {
                             style={{ filter: 'opacity(0.7)' }}
                             src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                         />
-                        <div className="bg-gray-900 relative flex flex-wrap py-5 rounded-xl shadow-md">
+                        <div className="bg-gray-900 relative flex md:flex-wrap py-5 rounded-xl shadow-md">
                             <div className="lg:w-1/2 px-5">
                                 <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                     ADDRESS
@@ -74,7 +72,7 @@ const Footer = ({}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/2 flex flex-col  md:py-8 mt-8 pl-20">
+                    <div className="w-1/2 flex flex-col md:py-8 mt-8 pl-20">
                         <div>
                             <div className="mt-20 mb-20">
                                 <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
@@ -90,10 +88,11 @@ const Footer = ({}) => {
                             </div>
                         </div>
                         <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
-                        Made With ❤ by{' '}
+                            Made With ❤ by{' '}
                             <span className="underline underline-offset-1">
-                            Sadegh Aliahmadi</span>
-                    </h1>
+                                Sadegh Aliahmadi
+                            </span>
+                        </h1>
                     </div>
                 </div>
             </div>

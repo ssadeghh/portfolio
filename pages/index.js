@@ -9,7 +9,6 @@ import Cursor from '../components/Cursor/index'
 import Social from '../components/Socials/index'
 import Header from '../components/Header'
 import { useTheme } from 'next-themes'
-import { useRouter } from 'next/router'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -111,7 +110,7 @@ export default function Home() {
                     <div className="laptop:mt-20 mt-10 w-1/3">
                         <img
                             src="/images/sadegh-without.png"
-                            alt="my-picture"
+                            alt="my picture"
                             className="rounded-full"
                             style={{ width: '500px' }}
                         />

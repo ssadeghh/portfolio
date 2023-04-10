@@ -42,6 +42,7 @@ const Header = ({ handleAboutScroll, handleContactScroll, isBlog }) => {
                                         }
                                     >
                                         <img
+                                        alt=''
                                             className="h-6"
                                             src={`/images/${
                                                 theme === 'dark'
@@ -54,6 +55,7 @@ const Header = ({ handleAboutScroll, handleContactScroll, isBlog }) => {
 
                                 <Popover.Button>
                                     <img
+                                    alt=''
                                         className="h-5"
                                         src={`/images/${
                                             !open
@@ -168,6 +170,7 @@ const Header = ({ handleAboutScroll, handleContactScroll, isBlog }) => {
                                 }
                             >
                                 <img
+                                alt=''
                                     className="h-6"
                                     src={`/images/${
                                         theme === 'dark'
@@ -204,6 +207,7 @@ const Header = ({ handleAboutScroll, handleContactScroll, isBlog }) => {
                                 }
                             >
                                 <img
+                                alt=''
                                     className="h-6"
                                     src={`/images/${
                                         theme === 'dark'

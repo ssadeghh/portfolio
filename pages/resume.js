@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import Cursor from '../components/Cursor'
 import Header from '../components/Header'
 import Socials from '../components/Socials'
-import Button from '../components/Button'
 import { useTheme } from 'next-themes'
 // Data
 import data from '../data/portfolio.json'
@@ -18,7 +17,7 @@ const Resume = () => {
         if (!data.showResume) {
             router.push('/')
         }
-    }, [])
+    }, [router])
     return (
         <>
             {data.showCursor && <Cursor />}
