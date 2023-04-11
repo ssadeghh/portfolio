@@ -9,6 +9,7 @@ import Cursor from '../components/Cursor/index'
 import Social from '../components/Socials/index'
 import Header from '../components/Header'
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -108,9 +109,10 @@ export default function Home() {
                         {/* <Socials className="mt-2 laptop:mt-5" /> */}
                     </div>
                     <div className="laptop:mt-20 mt-10 w-1/3">
-                        <img
+                        <Image
                             src="/images/sadegh-without.png"
                             alt="my picture"
+                            loading='lazy'
                             className="rounded-full"
                             style={{ width: '500px' }}
                         />
