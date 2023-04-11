@@ -114,25 +114,26 @@ export default function Home() {
                             alt="my picture"
                             loading='lazy'
                             className="rounded-full"
-                            style={{ width: '500px' }}
+                            width={500}
+                            height={500}
                         />
                         <div className="relative">
                             <div
-                                className={`absolute  ${windowWidth < 800 ? "-bottom-5 -left-10 w-20 h-20" : "-bottom-20 -left-10 w-96 h-96"} bg-purple-300 rounded-full mix-blend-multiply filter blur-xl ${
+                                className={`absolute  ${windowWidth < 765 ? "-bottom-5 -left-10 w-20 h-20" : "-bottom-20 -left-10 w-96 h-96"} bg-purple-300 rounded-full mix-blend-multiply filter blur-xl ${
                                     theme === 'light'
                                         ? 'opacity-80'
                                         : 'opacity-60'
                                 } animate-blob `}
                             ></div>
                             <div
-                                className={`absolute -bottom-5 right-4 ${windowWidth < 800 ? "w-20 h-20" : "w-96 h-96"} bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl ${
+                                className={`absolute -bottom-5 right-4 ${windowWidth < 765 ? "w-20 h-20" : "w-96 h-96"} bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl ${
                                     theme === 'light'
                                         ? 'opacity-80'
                                         : 'opacity-60'
                                 } animate-blob animation-delay-2000`}
                             ></div>
                             <div
-                                className={`absolute ${windowWidth < 800 ? "bottom-5 left-10 w-20 h-20" : "bottom-20 left-10 w-96 h-96"} bg-pink-300 rounded-full mix-blend-multiply filter blur-xl ${
+                                className={`absolute ${windowWidth < 765 ? "bottom-5 left-10 w-20 h-20" : "bottom-20 left-10 w-96 h-96"} bg-pink-300 rounded-full mix-blend-multiply filter blur-xl ${
                                     theme === 'light'
                                         ? 'opacity-80'
                                         : 'opacity-60'
@@ -148,7 +149,7 @@ export default function Home() {
                     ref={aboutRef}
                 >
                     <div className="mt-5 container mx-auto laptop:mt-10 grid grid-cols-1 mob:w-full gap-4">
-                        <div className="flex flex-wrap m-4">
+                        <div className="flex flex-wrap ">
                             <div className="p-4 sm:w-1 w-full">
                                 {mount && (
                                     <div
@@ -217,7 +218,7 @@ export default function Home() {
                 </div>
 
                 <div ref={contactRef}>
-                    <Footer />
+                    <Footer windowWidth={windowWidth}/>
                 </div>
             </div>
         </div>
