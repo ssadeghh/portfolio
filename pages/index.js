@@ -40,7 +40,7 @@ export default function Home() {
             behavior: 'smooth',
         })
     }
-    
+
     useEffect(() => {
         setMount(true)
         // Update the state with the current window width on mount and on resize
@@ -119,25 +119,22 @@ export default function Home() {
                         />
                         <div className="relative">
                             <div
-                                className={`absolute  ${windowWidth < 765 ? "-bottom-5 -left-10 w-20 h-20" : "-bottom-20 -left-10 w-96 h-96"} bg-purple-300 rounded-full mix-blend-multiply filter blur-xl ${
-                                    theme === 'light'
-                                        ? 'opacity-80'
-                                        : 'opacity-60'
-                                } animate-blob `}
+                                className={`absolute  ${windowWidth < 765 ? "-bottom-5 -left-10 w-20 h-20" : "-bottom-20 -left-10 w-96 h-96"} bg-purple-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
+                                    ? 'opacity-80'
+                                    : 'opacity-60'
+                                    } animate-blob `}
                             ></div>
                             <div
-                                className={`absolute -bottom-5 right-4 ${windowWidth < 765 ? "w-20 h-20" : "w-96 h-96"} bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl ${
-                                    theme === 'light'
-                                        ? 'opacity-80'
-                                        : 'opacity-60'
-                                } animate-blob animation-delay-2000`}
+                                className={`absolute -bottom-5 right-4 ${windowWidth < 765 ? "w-20 h-20" : "w-96 h-96"} bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
+                                    ? 'opacity-80'
+                                    : 'opacity-60'
+                                    } animate-blob animation-delay-2000`}
                             ></div>
                             <div
-                                className={`absolute ${windowWidth < 765 ? "bottom-5 left-10 w-20 h-20" : "bottom-20 left-10 w-96 h-96"} bg-pink-300 rounded-full mix-blend-multiply filter blur-xl ${
-                                    theme === 'light'
-                                        ? 'opacity-80'
-                                        : 'opacity-60'
-                                } animate-blob animation-delay-4000`}
+                                className={`absolute ${windowWidth < 765 ? "bottom-5 left-10 w-20 h-20" : "bottom-20 left-10 w-96 h-96"} bg-pink-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
+                                    ? 'opacity-80'
+                                    : 'opacity-60'
+                                    } animate-blob animation-delay-4000`}
                             ></div>
                         </div>
                     </div>
@@ -153,11 +150,10 @@ export default function Home() {
                             <div className="p-4 sm:w-1 w-full">
                                 {mount && (
                                     <div
-                                        className={`h-full ${
-                                            theme === 'dark'
-                                                ? 'bg-gray-800'
-                                                : 'bg-gray-200'
-                                        } bg-opacity-40 p-8 rounded-xl`}
+                                        className={`h-full ${theme === 'dark'
+                                            ? 'bg-gray-800'
+                                            : 'bg-gray-200'
+                                            } bg-opacity-40 p-8 rounded-xl`}
                                     >
                                         <TerminalIcon className="block w-8 text-gray-500 mb-4" />
                                         <h1 className="text-3xl text-bold mb-6">
@@ -167,47 +163,15 @@ export default function Home() {
                                             <p className="leading-relaxed mb-6">
                                                 Hi there! My name is{' '}
                                                 <b>Sadegh Alihamadi</b>, and I'm
-                                                a <b>21-year-old</b> junior
-                                                front-end developer. I have
-                                                experience in a variety of
-                                                technologies, including
-                                                <b>
-                                                    {' '}
-                                                    JavaScript, ReactJS, ANTD,
-                                                    Tailwind CSS, Bootstrap,
-                                                    HTML & CSS, Redux, and
-                                                    Next.js.
-                                                </b>
-                                                <br />
-                                                As a front-end developer, I am
-                                                passionate about creating{' '}
-                                                <b>
-                                                    visually appealing and
-                                                    user-friendly interfaces
-                                                </b>
-                                                that help bring my clients'
-                                                ideas to life. I am constantly{' '}
-                                                <b>
-                                                    learning and improving my
-                                                    skills
-                                                </b>
-                                                , and I am excited to take on{' '}
-                                                <b>
-                                                    new challenges and projects
-                                                </b>
-                                                .
-                                                <br />
-                                                Whether you're looking to build
-                                                a new website or improve an
-                                                existing one, I am here to help.
-                                                Please feel free to
-                                                <b style={{ color: '#9d51a1' }}>
-                                                    {' '}
-                                                    contact
-                                                </b>{' '}
-                                                me to discuss your project and
-                                                how I can assist you in
-                                                achieving your goals.
+                                                Highly motivated and skilled <b>Full Stack Developer </b>with a
+                                                passion for creating innovative and user-friendly web
+                                                applications. Proficient in JavaScript and its frameworks,
+                                                including <b>ReactJS, NodeJS, and Express</b>, as well as Python and
+                                                Django. Experienced in front-end development with HTML,
+                                                CSS, and modern tooling like Git, ANTD, and Redux. Quick
+                                                learner, adaptable, and committed to delivering robust and
+                                                efficient solutions. Holds LPIC-1 and LPIC-2 certifications,
+                                                demonstrating a strong foundation in Linux administration
                                             </p>
                                         </div>
                                     </div>
@@ -218,7 +182,7 @@ export default function Home() {
                 </div>
 
                 <div ref={contactRef}>
-                    <Footer windowWidth={windowWidth}/>
+                    <Footer windowWidth={windowWidth} />
                 </div>
             </div>
         </div>

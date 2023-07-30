@@ -32,15 +32,21 @@
     ],
     "resume": {
         "tagline": "👋  I'm a software engineer, product designer.",
-        "description1": "I'm a junior front-end developer with experience in a variety of technologies. I'm passionate about creating visually appealing and user-friendly interfaces that help bring clients' ideas to life.",
+        "description1": "Highly motivated and skilled Full Stack Developer with a passion for creating innovative and user-friendly web applications. Proficient in JavaScript and its frameworks, including ReactJS, NodeJS, and Express, as well as Python and Django.",
         "description2": "I'm a quick learner and always seeks to expand his knowledge and skill set. And also I'm a motivated self-starter with excellent problem-solving skills, and I enjoy working in a collaborative environment.Finally I currently seeking opportunities to apply his skills and grow as a developer.",
         "education": {
             "universityName": "University Complex, Islamic Azad University Central Tehran Branch",
             "universityDate": "2020",
             "universityPara": "I am currently a student at University Complex, Islamic Azad University Central Tehran Branch, where I have been studying since 2020. I am pursuing a degree in Bachelor of Engineering and have been working hard to expand my knowledge in the field. During my time at university, I have gained valuable skills such as Javascript, React, Python etc."
         },
-        "languages": ["Javascript", "HTML5", "CSS", "Python"],
-        "frameworks": ["React", "Django", "Next.js", "Bootstrap"],
+        "languages": [
+            "Javascript",
+            "HTML5&CSS",
+            "NodeJS",
+            "Python",
+            "Rest API"
+        ],
+        "frameworks": ["React", "Django", "Next.js", "Express", "Bootstrap"],
         "others": ["ANTD", "Redux", "Tailwind CSS", "Git"]
     }
 }

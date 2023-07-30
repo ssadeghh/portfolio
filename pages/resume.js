@@ -18,23 +18,44 @@ const Resume = () => {
             router.push('/')
         }
     }, [router])
+
+    const downloadResume = () => {
+        // URL to your resume.pdf file
+        const resumeUrl = "/resume-full.pdf";
+
+        // Create a new anchor element
+        const link = document.createElement("a");
+
+        // Set the href attribute to your resume.pdf URL
+        link.href = resumeUrl;
+
+        // Set the download attribute to specify the filename when downloaded
+        link.download = "resume-full.pdf";
+
+        // Append the anchor element to the document body
+        document.body.appendChild(link);
+
+        // Simulate a click event on the anchor element to trigger the download
+        link.click();
+
+        // Remove the anchor element from the document body after the download is initiated
+        document.body.removeChild(link);
+    };
     return (
         <>
             {data.showCursor && <Cursor />}
             <div
-                className={`container mx-auto mb-10 ${
-                    data.showCursor && 'cursor-none'
-                }`}
+                className={`container mx-auto mb-10 ${data.showCursor && 'cursor-none'
+                    }`}
             >
                 <Header isBlog />
                 {mount && (
                     <div className="mt-10 w-full flex flex-col items-center">
                         <div
-                            className={`w-full ${
-                                mount && theme.theme === 'dark'
-                                    ? 'bg-neutral-800'
-                                    : 'bg-gray-100'
-                            } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
+                            className={`w-full ${mount && theme.theme === 'dark'
+                                ? 'bg-neutral-800'
+                                : 'bg-gray-100'
+                                } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
                         >
                             <h1 className="text-3xl font-bold">{data.name}</h1>
                             <h2 className="text-xl mt-5">
@@ -71,7 +92,7 @@ const Resume = () => {
                                     {data.resume.languages && (
                                         <div className="mt-2 mob:mt-5">
                                             <h2 className="text-lg">
-                                                Languages
+                                                Languages & Frameworks
                                             </h2>
                                             <ul className="list-disc">
                                                 {data.resume.languages.map(
@@ -91,7 +112,7 @@ const Resume = () => {
                                     {data.resume.frameworks && (
                                         <div className="mt-2 mob:mt-5">
                                             <h2 className="text-lg">
-                                                Frameworks
+                                                Languages & Frameworks
                                             </h2>
                                             <ul className="list-disc">
                                                 {data.resume.frameworks.map(
@@ -125,6 +146,11 @@ const Resume = () => {
                                             </ul>
                                         </div>
                                     )}
+                                </div>
+                                <div className="flex justify-center mt-10">
+                                    <button className="download-btn" onClick={downloadResume}>
+                                        Download Resume
+                                    </button>
                                 </div>
                             </div>
                         </div>
