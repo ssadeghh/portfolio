@@ -34,7 +34,7 @@ const experiences = [
         points: [
             "This project has been created with ReactJS and other libraries like Framer Motion to have nice animations/motions.",
             "You can change the color of the 3D model shirt with millions of different colors and also modify the shirt's logo by putting your own logo instead..",
-            "At the end, you can ask AI to create a logo for you. That's so amazing.",
+            "At the end, you can ask AI to create a logo for you. That's so amazing.    ",
         ],
         showLink: "If you want to visit the website, you can click on the link above."
     },

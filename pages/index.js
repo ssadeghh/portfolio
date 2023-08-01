@@ -14,7 +14,7 @@ import Footer from '../components/Footer'
 import Works from '../components/Works/index';
 import { staggerContainer } from '../utils/motion';
 import { motion } from 'framer-motion';
-import { styles } from '../pages/styles';
+import { styles } from '../components/styles';
 
 export default function Home() {
     // Ref
