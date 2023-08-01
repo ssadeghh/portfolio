@@ -123,19 +123,19 @@ export default function Home() {
                         />
                         <div className="relative">
                             <div
-                                className={`absolute  ${windowWidth < 765 ? "-bottom-5 -left-10 w-20 h-20" : "-bottom-20 -left-10 w-96 h-96"} bg-purple-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
+                                className={`absolute  ${windowWidth < 765 ? "-bottom-5 -left-10 w-[100px] h-[100px]" : "-bottom-20 -left-10 w-96 h-96"} bg-purple-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
                                     ? 'opacity-80'
                                     : 'opacity-60'
                                     } animate-blob `}
                             ></div>
                             <div
-                                className={`absolute -bottom-5 right-4 ${windowWidth < 765 ? "w-20 h-20" : "w-96 h-96"} bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
+                                className={`absolute -bottom-5 right-4 ${windowWidth < 765 ? "w-[100px] h-[100px]" : "w-96 h-96"} bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
                                     ? 'opacity-80'
                                     : 'opacity-60'
                                     } animate-blob animation-delay-2000`}
                             ></div>
                             <div
-                                className={`absolute ${windowWidth < 765 ? "bottom-5 left-10 w-20 h-20" : "bottom-20 left-10 w-96 h-96"} bg-pink-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
+                                className={`absolute ${windowWidth < 765 ? "bottom-5 left-10 w-[100px] h-[100px]" : "bottom-20 left-10 w-96 h-96"} bg-pink-300 rounded-full mix-blend-multiply filter blur-xl ${theme === 'light'
                                     ? 'opacity-80'
                                     : 'opacity-60'
                                     } animate-blob animation-delay-4000`}
