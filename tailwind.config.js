@@ -12,6 +12,7 @@ module.exports = {
       laptop: "1024px",
       desktop: "1280px",
       laptopl: "1440px",
+      xs: "450px",
     },
     extend: {
       animation: {
@@ -21,7 +22,7 @@ module.exports = {
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
-          }, 
+          },
           "33%": {
             transform: "translate(30px, -50px) scale(1.1)",
           },

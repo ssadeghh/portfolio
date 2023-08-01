@@ -11,6 +11,10 @@ import Header from '../components/Header'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Footer from '../components/Footer'
+import Works from '../components/Works/index';
+import { staggerContainer } from '../utils/motion';
+import { motion } from 'framer-motion';
+import { styles } from '../pages/styles';
 
 export default function Home() {
     // Ref
@@ -180,6 +184,24 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
+                <motion.section
+                    variants={staggerContainer()}
+                    initial='hidden'
+                    whileInView='show'
+                    viewport={{ once: true, amount: 0.25 }}
+                    className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
+                >
+                    <span className='hash-span' id='work'>
+                        &nbsp;
+                    </span>
+
+                    <span style={{ marginTop: '-100px', paddingBottom: '100px', display: 'block' }} className='hash-span' id='work'>
+                        &nbsp;
+                    </span>
+                    <Works />
+
+                </motion.section>
 
                 <div ref={contactRef}>
                     <Footer windowWidth={windowWidth} />
